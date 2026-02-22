@@ -13,3 +13,17 @@ print(df.head())
 print("\nDataset Info:")
 print(df.info())
 
+# Summary statistics
+print("\nSummary Statistics:")
+print(df.describe())
+
+# Count species
+print("\nSpecies Count:")
+print(df['species'].value_counts())
+
+# Simple visualization
+plt.scatter(df['sepal_length'], df['petal_length'])
+plt.title("Sepal Length vs Petal Length")
+plt.xlabel("Sepal Length")
+plt.ylabel("Petal Length")
+plt.show()
